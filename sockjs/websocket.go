@@ -51,7 +51,7 @@ again:
 	var data []byte
 	var messages []string
 
-	// BUG(fzzy): 
+	// BUG(fzzy):
 	// Received websocket message size should be limited to something reasonable.
 	// http://code.google.com/p/go/issues/detail?id=5082
 	err := websocket.Message.Receive(s.ws, &data)

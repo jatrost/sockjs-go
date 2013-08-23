@@ -30,7 +30,7 @@ type Config struct {
 	// Function that is called to set the JSESSIONID cookie, if Jsessionid setting is set.
 	JsessionidFunc func(http.ResponseWriter, *http.Request)
 
-	// Enables IP-address checks for legacy transports. 
+	// Enables IP-address checks for legacy transports.
 	// If enabled, all subsequent calls must be from the same IP-address.
 	// Default: true
 	VerifyAddr bool

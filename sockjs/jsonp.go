@@ -62,7 +62,6 @@ func jsonpSendHandler(h *handler, w http.ResponseWriter, r *http.Request, sessid
 
 	buf = bytes.NewBuffer(nil)
 	io.Copy(buf, r.Body)
-	r.Body.Close()
 	switch r.Header.Get("Content-Type") {
 	case "application/x-www-form-urlencoded":
 		m, err := url.ParseQuery(buf.String())

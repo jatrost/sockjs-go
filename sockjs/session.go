@@ -8,7 +8,7 @@ import (
 
 // Session describes a SockJS session.
 type Session interface {
-	// Receive blocks until a message can be returned from session receive buffer or nil, 
+	// Receive blocks until a message can be returned from session receive buffer or nil,
 	// if the session is closed.
 	Receive() (m []byte)
 
@@ -17,15 +17,15 @@ type Session interface {
 	Send(m []byte)
 
 	// Close closes the session.
-	// Pending sends will be discarded unless the client receives them within 
+	// Pending sends will be discarded unless the client receives them within
 	// Config.DisconnectDelay.
 	Close(code int, reason string)
 
-	// End is a convenience method for closing with the default code and reason, 
+	// End is a convenience method for closing with the default code and reason,
 	// Close(3000, "Go away!").
 	End()
 
-	// Info returns a RequestInfo object containing information copied from the last received 
+	// Info returns a RequestInfo object containing information copied from the last received
 	// request.
 	Info() RequestInfo
 
