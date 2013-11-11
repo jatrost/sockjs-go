@@ -12,7 +12,7 @@ Status: **EXPERIMENTAL**, use with caution. Passes 68 of 72 tests.
 
 ## Documentation and examples
 
-Documentation is available at http://gopkgdoc.appspot.com/pkg/github.com/fzzy/sockjs-go/sockjs.
+Documentation is available at http://godoc.org/github.com/fzzy/sockjs-go/sockjs.
 
 Alternatively, run godoc:
 
